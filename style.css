@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Fira+Code&display=swap');
+
 
 :root {
     /* --background-color: #FDFFFC;
@@ -72,30 +73,36 @@ h2 {
 
 
 code {
-  font-family: 'Courier New', monospace;
+  font-family: 'Fira Code', 'Courier', monospace;
+  font-size: 0.9em;
+  background-color: var(--link-hover);
 }
 
 
-/*
+
 strong{
   font-weight: 100;
-  background-color: var(--white);
-  background: var(--bgrainbow);
-  -webkit-background-clip: highlight;
+  background-color: var(--link-text-hover);
+  /* background: var(--bgrainbow); */
+  /* -webkit-background-clip: highlight; */
 
-  color: var(--trueblack);
+  color: var(--background-color);
   padding: 1px 2px;
   box-sizing: content-box;
   border-radius: 5px;
-} */
+}
 
-p a {
+li {
+  margin: 20px 0;
+}
+
+p a, li a {
   color: var(--link-text-hover);
   text-decoration: underline;
 }
 
 
-p a:hover {
+p a:hover, li a:hover {
   color: var(--link-color);
 }
 
@@ -147,7 +154,7 @@ ul, ol {
 #peoplelist a:before, li:before {
   content:"";
   height:1em;
-  width:1em;
+  width:.9em;
   display:block;
   float:left;
   padding: .1em 0em .1em;
@@ -155,11 +162,11 @@ ul, ol {
   background-position:center;
   background-repeat:no-repeat;
   background-size:60%;
-  margin-right: .2em;
+  padding-right: .2em;
 
   mask-repeat: no-repeat;
 
-  background-color: var(--header-color);
+  background-color: var(--link-color);
   -webkit-mask-image: url("assets/mute.svg");
   mask-image: url("assets/mute.svg");
 
