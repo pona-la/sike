@@ -1,72 +1,48 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/jpg" href="assets/favicon.jpg"/>
+---
+layout: lawa
+---
+<h1 id="header"><img class="tokipona" src="assets/tokipona.svg"></img>nasin kama<img class="tokipona" src="assets/tokipona.svg"></img></h1>
+<p><a href="/">&larr; o tawa lipu suli</a></p>
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="sike pona" />
-    <meta property="og:description" content="sike pi lipu pi jan pona" />
-    <meta name="theme-color" content="#000087" />
+<p>lipu ni li open lon mun nanpa wan pi sike nanpa 2023.</p>
+<p>kala pona Tonyu li lawa e lipu ni.</p>
+<p>sina jan pi toki pona la o kama a!</p>
 
+<hr/>
 
-    <title>sike pona</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1 id="header"><img class="tokipona" src="assets/tokipona.svg"></img>nasin kama<img class="tokipona" src="assets/tokipona.svg"></img></h1>
-    <p><a href="/">&larr; o tawa lipu suli</a></p>
+<h2 id="kama-github">kama pi nasin Github</h2>
+<ol>
+  <li><p>o pana e wile Pull Request tawa <a href="https://github.com/pona-la/sike" target="_blank">ilo Github.</a></p></li>
+  <li><p>o ante e <code>jan.json</code>, o pana e ni:</p>
+    <p><code>{ "name": "&lt;nimi sina&gt;", "url": "&lt;linja pi lipu sina&gt;" }</code></p>
+  </li>
 
-    <p>lipu ni li open lon mun nanpa wan pi sike nanpa 2023.</p>
-    <p>kala pona Tonyu li lawa e lipu ni.</p>
-    <p>sina jan pi toki pona la o kama a!</p>
+  <li>o <a href="#pana">pana e lipu lili</a> lon lipu sina!</li>
+</ol>
+<hr/>
 
-    <hr/>
+<h2 id="kama-ante">kama pi nasin ante</h2>
+<p>sina ken ala kepeken ilo Github la sina ken kama lon nasin ante.</p>
+<p>o toki tawa kala pona Tonyu lon <a href="mailto:bucketfishy@gmail.com">bucketfishy@gmail.com</a>. o toki e nimi sina, e linja pi lipu sina.</p>
+<hr/>
 
-    <h2 id="kama-github">kama pi nasin Github</h2>
-    <ol>
-      <li><p>o pana e wile Pull Request tawa <a href="https://github.com/pona-la/sike" target="_blank">ilo Github.</a></p></li>
-      <li><p>o ante e <code>jan.json</code>, o pana e ni:</p>
-        <p><code>{ "name": "&lt;nimi sina&gt;", "url": "&lt;linja pi lipu sina&gt;" }</code></p>
-      </li>
+<h2 id="pana">pana pi lipu lili</h2>
+<p>sina lon sike la o pana e lipu lili tawa lipu sina. o pana e toki ni:</p>
+<p><code>
+  &lt;iframe id="sike-pona" style="width: 100%; height: 3rem;" src="{{ '/jan/' | absolute_url }}<strong>nimi sina</strong>"&gt;&lt;/iframe&gt;
+</code></p>
+<p>o ante e <strong>nimi sina</strong> tawa nimi pi pana sina.</p>
+<p>lukin la, ona li sama ni:</p>
+<iframe id="sike-pona" style="width: 100%; height: 3rem;" src="{{ '/jan/kala pona' | absolute_url }}"></iframe>
+<p>sina wile ala kepeken lipu lili la sina ken kepeken linja:</p>
+<p>linja tawa kama: <code>{{ '/jan/' | absolute_url }}<strong>nimi sina</strong>/next.html</code></p>
+<p>linja tawa pini: <code>{{ '/jan/' | absolute_url }}<strong>nimi sina</strong>/prev.html</code></p>
+<p>linja tawa lipu ni: <code>{{ '/' | absolute_url }}</code></p>
+<p>o pona!</p>
+<hr/>
 
-      <li>o <a href="#pana">pana e lipu lili</a> lon lipu sina!</li>
-    </ol>
-    <hr/>
+<h2>ike li lon la...</h2>
+<p>o pilin ike ala! o toki tawa mi, anu jan ante lon sike ni.</p>
+<hr/>
 
-    <h2 id="kama-ante">kama pi nasin ante</h2>
-    <p>sina ken ala kepeken ilo Github la sina ken kama lon nasin ante.</p>
-    <p>o toki tawa kala pona Tonyu lon <a href="mailto:bucketfishy@gmail.com">bucketfishy@gmail.com</a>. o toki e nimi sina, e linja pi lipu sina.</p>
-    <hr/>
-
-    <h2 id="pana">pana pi lipu lili</h2>
-    <p>sina lon sike la o pana e lipu lili tawa lipu sina. o pana e toki ni:</p>
-    <p><code>
-      &lt;iframe id="sike-pona" style="width: 100%; height: 3rem;" src="https://sike.pona.la/jan/<strong>nimi sina</strong>"&gt;&lt;/iframe&gt;
-    </code></p>
-    <p>o ante e <strong>nimi sina</strong> tawa nimi pi pana sina.</p>
-    <p>lukin la, ona li sama ni:</p>
-    <iframe id="sike-pona" style="width: 100%; height: 3rem;" src="https://sike.pona.la/jan/kala pona"></iframe>
-    <p>sina wile ala kepeken lipu lili la sina ken kepeken linja:</p>
-    <p>linja tawa kama: <code>https://sike.pona.la/jan/<strong>nimi sina</strong>/next.html</code></p>
-    <p>linja tawa pini: <code>https://sike.pona.la/jan/<strong>nimi sina</strong>/prev.html</code></p>
-    <p>linja tawa lipu ni: <code>https://sike.pona.la/</code></p>
-    <p>o pona!</p>
-    <hr/>
-
-    <h2>ike li lon la...</h2>
-    <p>o pilin ike ala! o toki tawa mi, anu jan ante lon sike ni.</p>
-    <hr/>
-
-    <p><a href="/">&larr; o tawa lipu suli</a></p>
-
-
-
-
-  </body>
-
-  <script type="text/javascript" src="script.js"></script>
-  <!-- <script type="text/javascript" src="header.js"></script> -->
-
-</html>
+<p><a href="/">&larr; o tawa lipu suli</a></p>
