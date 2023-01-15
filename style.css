@@ -75,19 +75,24 @@ h2 {
 code {
   font-family: 'Fira Code', 'Courier', monospace;
   font-size: 0.9em;
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
   background-color: var(--link-hover);
+  border-radius: 5px;
 }
 
 
 
 strong{
+  font-family: inherit;
   font-weight: 100;
   background-color: var(--link-text-hover);
   /* background: var(--bgrainbow); */
   /* -webkit-background-clip: highlight; */
 
   color: var(--background-color);
-  padding: 1px 2px;
+  padding: 1px 3px;
   box-sizing: content-box;
   border-radius: 5px;
 }

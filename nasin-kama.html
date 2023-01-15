@@ -42,17 +42,37 @@
 
     <h2 id="pana">pana pi lipu lili</h2>
     <p>sina lon sike la o pana e lipu lili tawa lipu sina. o pana e toki ni:</p>
-    <p><code>
-      &lt;iframe id="sike-pona" style="width: 100%; height: 3rem;" src="https://sike.pona.la/jan/<strong>nimi sina</strong>"&gt;&lt;/iframe&gt;
-    </code></p>
-    <p>o ante e <strong>nimi sina</strong> tawa nimi pi pana sina.</p>
+    <p><pre><code>&lt;div id="sike-pona" style="width: 100%; height: 3rem;"&gt;
+  &lt;link rel="stylesheet" href="https://sike.pona.la/embed.css"/&gt;
+  &lt;span id="left"&gt;
+    &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html" id="prev"&gt;&larr; prev&lt;/a&gt;
+    &lt;/span&gt;
+  &lt;span id="mid"&gt;&lt;a href="https://sike.pona.la"&gt;
+    &lt;img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg"&gt;&lt;/img&gt;
+    sike pona
+    &lt;img class="tokipona" src="https://sike.pona.la/assets/tokipona.svg"&gt;&lt;/img&gt;
+  &lt;/a&gt;&lt;/span&gt;
+  &lt;span id="right"&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html" id="next"&gt;next &rarr;&lt;/a&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre></p>
+    <p>o ante e <strong>NIMI_SINA</strong> tawa nimi pi pana sina.</p>
     <p>lukin la, ona li sama ni:</p>
-    <iframe id="sike-pona" style="width: 100%; height: 3rem;" src="https://sike.pona.la/jan/kala pona"></iframe>
+
+
+
+    <div id="sike-pona" style="width: 100%; height: 3rem;">
+      <link rel="stylesheet" href="embed.css"/>
+      <span id="left">&larr; <a href="https://sike.pona.la/jan/kala%20pona/prev.html" id="prev">prev</a></span>
+      <span id="mid"><a href="https://sike.pona.la"><img class="tokipona" src="/assets/tokipona.svg"></img>sike pona<img class="tokipona" src="/assets/tokipona.svg"></img></a></span>
+      <span id="right"><a href="https://sike.pona.la/jan/kala%20pona/next.html" id="next">next</a> &rarr;</span>
+    </div>
     <p>sina wile ala kepeken lipu lili la sina ken kepeken linja:</p>
-    <p>linja tawa kama: <code>https://sike.pona.la/jan/<strong>nimi sina</strong>/next.html</code></p>
-    <p>linja tawa pini: <code>https://sike.pona.la/jan/<strong>nimi sina</strong>/prev.html</code></p>
+    <p>linja tawa kama: <code>https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html</code></p>
+    <p>linja tawa pini: <code>https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html</code></p>
     <p>linja tawa lipu ni: <code>https://sike.pona.la/</code></p>
     <p>o pona!</p>
+
     <hr/>
 
     <h2>ike li lon la...</h2>
