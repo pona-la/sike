@@ -10,9 +10,17 @@
     <meta property="og:description" content="sike pi lipu pi jan pona" />
     <meta name="theme-color" content="#000087" />
 
-
     <title>sike pona</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      details { margin-bottom: 1rem; }
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    </style>
   </head>
   <body>
     <h1 id="header"><img class="tokipona" src="assets/tokipona.svg"></img>nasin kama<img class="tokipona" src="assets/tokipona.svg"></img></h1>
@@ -30,19 +38,25 @@
       <li><p>o ante e <code>jan.json</code>, o pana e ni:</p>
         <p><code>{ "name": "&lt;nimi sina&gt;", "url": "&lt;linja pi lipu sina&gt;" }</code></p>
       </li>
-
       <li>o <a href="#pana">pana e lipu lili</a> lon lipu sina!</li>
     </ol>
+
     <hr/>
 
     <h2 id="kama-ante">kama pi nasin ante</h2>
     <p>sina ken ala kepeken ilo Github la sina ken kama lon nasin ante.</p>
     <p>o toki tawa jan Tene lon @denesszanto kepeken ilo Siko. anu o toki tawa kala pona Tonyu lon <a href="mailto:bucketfishy@gmail.com">bucketfishy@gmail.com</a>. o toki e nimi sina, e linja pi lipu sina.</p>
+
     <hr/>
 
     <h2 id="pana">pana pi lipu lili</h2>
-    <p>sina lon sike la o pana e lipu lili tawa lipu sina. o pana e toki ni:</p>
-    <p><pre><code>&lt;div id="sike-pona" style="width: 100%; height: 3rem;"&gt;
+    <p>sina lon sike la o pana e lipu lili tawa lipu sina. o pana e toki wan ni:</p>    
+    <p>o ante e <strong>NIMI_SINA</strong> tawa nimi pi pana sina.</p>
+
+    <details>
+      <summary>nasin #1</summary>
+
+      <p><pre><code>&lt;div id="sike-pona" style="width: 100%; height: 3rem;"&gt;
   &lt;link rel="stylesheet" href="https://sike.pona.la/embed.css"/&gt;
   &lt;span id="left"&gt;
     &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html" id="prev"&gt;&larr; prev&lt;/a&gt;
@@ -56,37 +70,155 @@
   &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html" id="next"&gt;next &rarr;&lt;/a&gt;
   &lt;/span&gt;
 &lt;/div&gt;</code></pre></p>
-    <p>o ante e <strong>NIMI_SINA</strong> tawa nimi pi pana sina.</p>
-    <p>lukin la, ona li sama ni:</p>
 
+      <p>lukin la, ona li sama ni:</p>
 
+      <div id="sike-pona" style="width: 100%; height: 3rem;">
+        <link rel="stylesheet" href="embed.css"/>
+        <span id="left">&larr; <a href="https://sike.pona.la/jan/kala%20pona/prev.html" id="prev">prev</a></span>
+        <span id="mid"><a href="https://sike.pona.la"><img class="tokipona" src="/assets/tokipona.svg"></img>sike pona<img class="tokipona" src="/assets/tokipona.svg"></img></a></span>
+        <span id="right"><a href="https://sike.pona.la/jan/kala%20pona/next.html" id="next">next</a> &rarr;</span>
+      </div>
+    </details>
 
-    <div id="sike-pona" style="width: 100%; height: 3rem;">
-      <link rel="stylesheet" href="embed.css"/>
-      <span id="left">&larr; <a href="https://sike.pona.la/jan/kala%20pona/prev.html" id="prev">prev</a></span>
-      <span id="mid"><a href="https://sike.pona.la"><img class="tokipona" src="/assets/tokipona.svg"></img>sike pona<img class="tokipona" src="/assets/tokipona.svg"></img></a></span>
-      <span id="right"><a href="https://sike.pona.la/jan/kala%20pona/next.html" id="next">next</a> &rarr;</span>
-    </div>
-    <p>sina wile ala kepeken lipu lili la sina ken kepeken linja:</p>
-    <p>linja tawa kama: <code>https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html</code></p>
-    <p>linja tawa pini: <code>https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html</code></p>
-    <p>linja tawa lipu ni: <code>https://sike.pona.la/</code></p>
-    <p>o pona!</p>
+    <hr>
 
-    <hr/>
+    <details>
+      <summary>nasin #2</summary>
 
-    <h2>ike li lon la...</h2>
-    <p>o pilin ike ala! o toki tawa mi, anu jan ante lon sike ni.</p>
+      <p><pre><code>&lt;div style="position:relative; width:88px;"&gt;
+  &lt;img src="https://sike.pona.la/sike-pona.gif" style="width:100%; height:auto; image-rendering:pixelated; display:block;" alt="sike pona"&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html"
+     style="position:absolute; left:9%; top:19%; width:23%; height:65%;"&gt;&lt;/a&gt;
+  &lt;a href="https://sike.pona.la/"
+     style="position:absolute; left:39%; top:19%; width:24%; height:65%;"&gt;&lt;/a&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html"
+     style="position:absolute; left:69%; top:19%; width:23%; height:65%;"&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre></p>
+
+      <p>lukin la, ona li sama ni:</p>
+
+      <div style="position:relative; width:200px; margin:auto; padding-bottom:1rem;">
+        <img src="sike-pona.gif" style="width:200px; height:auto; image-rendering:pixelated;" alt="sike pona">
+        <a href="https://sike.pona.la/jan/jan Tene/prev.html" style="position:absolute; left:9%; top:19%; width:23%; height:65%;"></a>
+        <a href="https://sike.pona.la/" style="position:absolute; left:39%; top:19%; width:24%; height:65%;"></a>
+        <a href="https://sike.pona.la/jan/jan Tene/next.html" style="position:absolute; left:69%; top:19%; width:23%; height:65%;"></a>
+      </div>
+    </details>
+
+    <hr>
+
+    <details>
+      <summary>nasin #3</summary>
+
+      <p><pre><code>&lt;div style="position:relative; width:88px;"&gt;
+  &lt;img src="https://sike.pona.la/sike-pona2.gif" style="width:100%; height:auto; image-rendering:pixelated; display:block;" alt="sike pona"&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html"
+     style="position:absolute; left:9%; top:19%; width:23%; height:65%;"&gt;&lt;/a&gt;
+  &lt;a href="https://sike.pona.la/"
+     style="position:absolute; left:39%; top:19%; width:24%; height:65%;"&gt;&lt;/a&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html"
+     style="position:absolute; left:69%; top:19%; width:23%; height:65%;"&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre></p>
+
+      <p>lukin la, ona li sama ni:</p>
+
+      <div style="position:relative; width:200px; margin:auto; padding-bottom:1rem;">
+        <img src="sike-pona2.gif" style="width:200px; height:auto; image-rendering:pixelated;" alt="sike pona">
+        <a href="https://sike.pona.la/jan/jan Tene/prev.html" style="position:absolute; left:9%; top:19%; width:23%; height:65%;"></a>
+        <a href="https://sike.pona.la/" style="position:absolute; left:39%; top:19%; width:24%; height:65%;"></a>
+        <a href="https://sike.pona.la/jan/jan Tene/next.html" style="position:absolute; left:69%; top:19%; width:23%; height:65%;"></a>
+      </div>
+    </details>
+
+    <hr>
+
+    <details>
+      <summary>nasin #4</summary>
+
+      <p><pre><code>&lt;style&gt;
+  .bg {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:0.5em;
+    box-sizing:border-box;
+    position:relative;
+    background:url('sike-pona-carpet.png') repeat;
+  }
+  .bg::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:url('sike-pona-carpet.png') repeat;
+    filter:blur(3px);
+  }
+  .bg &gt; * {
+    position:relative;
+  }
+&lt;/style&gt;
+
+&lt;div class="bg"&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/prev.html"&gt;
+    &lt;img src="sike-pona-arrow.png"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://sike.pona.la/"&gt;
+    &lt;img src="sike-pona-text.png"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://sike.pona.la/jan/<strong>NIMI_SINA</strong>/next.html"&gt;
+    &lt;img src="sike-pona-arrow.png"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre></p>
+
+      <p>lukin la, ona li sama ni:</p>
+      <style>
+          .bg {
+          display:flex;
+          align-items:center;
+          justify-content: center;
+          width:100%;
+          padding:0.5em;
+          box-sizing:border-box;
+          position:relative;
+          background:url('sike-pona-carpet.png') repeat;
+        }
+        .bg::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url('sike-pona-carpet.png') repeat;
+          
+          filter: blur(3px);     
+        }
+        .bg > * {
+          position: relative;
+        }
+      </style>
+
+      <div class="bg">
+        <a href="https://sike.pona.la/jan/NIMI_SINA/prev.html" style="display:flex; align-items:center;">
+          <img src="sike-pona-arrow.png" alt="pini" style="height:5em; width:auto; transform:scaleX(-1); padding-top:1em; image-rendering:pixelated; display:block;">
+        </a>
+        <a href="https://sike.pona.la/" style="display:flex; align-items:center; margin:0 1em;">
+          <img src="sike-pona-text.gif" alt="sike pona" style="height:5em; width:auto; padding-top:1em; image-rendering:pixelated; display:block;">
+        </a>
+        <a href="https://sike.pona.la/jan/NIMI_SINA/next.html" style="display:flex; align-items:center;">
+          <img src="sike-pona-arrow.png" alt="kama" style="height:5em; width:auto; padding-top:1em; image-rendering:pixelated; display:block;">
+        </a>
+      </div>
+    </details>
+
     <hr/>
 
     <p><a href="/">&larr; o tawa lipu suli</a></p>
-
-
-
-
   </body>
 
-  <script type="text/javascript" src="script.js"></script>
-  <!-- <script type="text/javascript" src="header.js"></script> -->
-
+  <script src="script.js"></script>
 </html>
