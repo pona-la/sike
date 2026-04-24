@@ -208,6 +208,16 @@ ul, ol {
   animation-play-state: running;
 }
 
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 @keyframes swim {
   0% {
     transform: rotate(0deg);
