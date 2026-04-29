@@ -71,6 +71,10 @@ h2 {
   font-size: 36px;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 
 code {
   font-family: 'Fira Code', 'Courier', monospace;
@@ -202,6 +206,16 @@ ul, ol {
 
 #header:hover .tokipona{
   animation-play-state: running;
+}
+
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 @keyframes swim {
